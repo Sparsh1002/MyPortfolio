@@ -2,7 +2,7 @@
 
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
-
+import { personalData } from "@/utils/data/personal-data";
 
 function AboutSection() {
   return (
@@ -29,6 +29,7 @@ function AboutSection() {
             height={300}
             alt="Sparsh Lodha"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+            unoptimized
           />
         </div>
       </div>
