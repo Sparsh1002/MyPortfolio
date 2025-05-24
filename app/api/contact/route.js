@@ -21,6 +21,7 @@ async function sendTelegramMessage(token, chat_id, message) {
     const res = await axios.post(url, {
       text: message,
       chat_id,
+      parse_mode: 'HTML'
     });
     return res.data.ok;
   } catch (error) {
@@ -37,7 +38,7 @@ const generateEmailTemplate = (name, email, userMessage) => `
       <p><strong>Name: </strong>${name}</p>
       <p><strong>Email: </strong>${email}</p>
       <p><strong>Message: </strong></p>
-      <blockquote style="border-left: 4px solid #007BFF; padding-left: 10px; margin-left: 0;">
+      <blockquote style="border-left: 4px solid #007BFF; padding-left: 10px;">
         ${userMessage}
       </blockquote>
       <p style="font-size: 12px; color: #888;">Click reply to respond to the sender.</p>
@@ -82,7 +83,7 @@ export async function POST(request) {
       }, { status: 400 });
     }
 
-    const message = `New message from ${name}\n\nEmail: ${email}\n\nMessage:${userMessage}\n\n`;
+    const message = `New message from <b>${name}</b>\n\nEmail: ${email}\n\nMessage: ${userMessage}\n\n`;
 
     // Send Telegram message
     const telegramSuccess = await sendTelegramMessage(token, chat_id, message);

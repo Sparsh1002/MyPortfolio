@@ -7,6 +7,7 @@ export const skillsData = [
   'C++',
   'Java',
   'Bootstrap',
+  'Tailwind',
   'React',
   'Node JS',
   'MySQL',

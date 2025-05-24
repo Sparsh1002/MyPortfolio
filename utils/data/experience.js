@@ -1,7 +1,7 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Developer - 1',
+    title: 'Software Developer-1',
     company: "Deloitte India",
     duration: "(June 2023 - Present)"
   },
