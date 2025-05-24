@@ -1,18 +1,17 @@
 import axios from 'axios';
 import { NextResponse } from 'next/server';
-// import nodemailer from 'nodemailer';
+import nodemailer from 'nodemailer';
 
 // Create and configure Nodemailer transporter
-// const transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   host: 'smtp.gmail.com',
-//   port: 587,
-//   secure: false, 
-//   auth: {
-//     user: process.env.EMAIL_ADDRESS,
-//     pass: process.env.GMAIL_PASSKEY, 
-//   },
-// });
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: 465,
+  secure: true, 
+  auth: {
+    user: process.env.EMAIL_ADDRESS,
+    pass: process.env.GMAIL_PASSKEY, 
+  },
+});
 
 // Helper function to send a message via Telegram
 async function sendTelegramMessage(token, chat_id, message) {
@@ -89,9 +88,9 @@ export async function POST(request) {
     const telegramSuccess = await sendTelegramMessage(token, chat_id, message);
 
     // Send email
-    // const emailSuccess = await sendEmail(payload, message);
+    const emailSuccess = await sendEmail(payload, message);
 
-    if (telegramSuccess) {
+    if (telegramSuccess || emailSuccess) {
       return NextResponse.json({
         success: true,
         message: 'Message sent successfully!',
@@ -100,7 +99,7 @@ export async function POST(request) {
 
     return NextResponse.json({
       success: false,
-      message: 'Failed to send message or email.',
+      message: 'Failed to send message or email.'+emailSuccess,
     }, { status: 500 });
   } catch (error) {
     console.error('API Error:', error.message);
