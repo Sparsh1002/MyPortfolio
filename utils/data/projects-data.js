@@ -1,20 +1,38 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'Real time Chatbot System',
-        description: "Developed a very efficient chatbot system using LLM, with a Milvus instance on Docker for data ingestion into an S3 bucket and retrieval, reducing query time by up to 70% through partition-based hybrid search, along with the Retrieval-Augmented Generation (RAG) approach and a reranker for accurate responses. The system incorporated real-time communication via WebSockets, secure authentication and authorization, user analytics and other rich features to enhance user engagement.",
+        name: 'Chatbot System',
+        description: "This project involved creating an efficient chatbot utilizing a Retrieval-Augmented Generation (RAG) architecture with Llama models to provide highly accurate and low-latency responses based on a knowledge base. It was built to support secure multi-user conversational continuity.",
         tools: ['React', 'Typescript', 'Bootstrap', 'Node JS', 'Python', 'PostgreSQL', 'Chart JS' ,'Milvus', 'RAG', 'Langchain', 'Tensorflow', 'Llama', 'Docker', 'Jest', 'Pytest', 'Amazon S3', 'MSAL', 'SAST', 'Nginx', 'WebSockets', 'PyLint', 'REST API', 'Postman', 'Swagger', 'Fortify'],
-        role: 'Full Stack Software Developer',
+        role: 'Software Developer - 1',
         code: '',
         demo: '',
     },
     {
         id: 2,
         name: 'Management System',
-        description: 'Developed a very complex management system with strong emphasis on streamlining business processes with audit trail mechanisms. I also architected multiple interdependent components to securely manage confidential and sensitive business processes significantly reducing the manual handling of large data in Excel while ensuring system efficiency and reliability.',
+        description: 'A scalable, microservices-based management platform designed to replace legacy manual workflows (over 80% of Excel usage) across complex business modules. The system ensured secure data flow, high concurrency, and provided real-time dashboards for operational visibility.',
         tools: ['React', 'Javascript', 'TypeScript', 'Bootstrap', 'Node JS', 'MySQL', 'Audit Trail', 'Jest', 'Nginx', 'REST API', 'Postman', 'Swagger', 'SAST', 'DAST', 'Ubuntu'],
-        role: 'Full Stack Developer',
+        role: 'Software Developer - 1',
+        code: '',
+        demo: '',
+    },
+    {
+        id: 3,
+        name: 'AI-driven DevOps Automation Platform',
+        description: "A full-stack automation platform developed to significantly reduce manual DevOps efforts for over 300 daily users. A key feature was the integration of on-prem LLM pipelines for automating the generation of work items from various documents and transcripts.",
+        tools: ['React', 'Javascript', 'TypeScript', 'Python', 'Node JS', 'Bootstrap', 'PostgreSQL', 'Nginx', 'REST APIs', 'Postman', 'SAST', 'DAST', 'VAPT', 'Fortify', 'Docker', 'Azure AD', 'Amazon S3', 'Azure DevOps'],
+        role: 'Software Developer - 1',
+        code: '',
+        demo: '',
+    },
+    {
+        id: 4,
+        name: 'Multi-Agent SAP Automation Framework',
+        description: "An innovative automation framework using a multi-agent orchestration platform (LangGraph) to handle complex SAP business processes. The framework was built to enable seamless and reliable task resumption through context-aware memory, significantly reducing manual SAP execution.",
+        tools: ['React', 'Python', 'LangGraph', 'Playwright', 'PostgreSQL', 'Langfuse', 'Agentic AI', 'SAP', 'Prompt Engineering'],
+        role: 'Software Developer - 1',
         code: '',
         demo: '',
     }
-];
+]

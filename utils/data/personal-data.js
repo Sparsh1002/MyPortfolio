@@ -2,7 +2,7 @@ export const personalData = {
   name: "SPARSH LODHA",
   profile: '/profile.png',
   designation: "Software Developer",
-  description: "My name is Sparsh Lodha. I'm a passionate Full Stack Software Developer with 2 years of hands-on experience building high-performance, secure, and scalable applications. I genuinely enjoy diving into diverse domains in field of web development. I’m a curious learner at heart, always looking to explore new tools and techniques that can make systems smarter and more impactful and constantly challenging myself to learn and grow. I thrive on collaboration, solving real-world problems, and blending creativity with efficiency to build meaningful, intelligent software  and contribute to building a better web. I am always open to new opportunities that align with my skills and passion for tech. Let’s build something awesome!",
+  description: "My name is Sparsh Lodha. I am an accomplished Full-stack developer with 3 years of experience specializing in designing and deploying secure, scalable, and highly performant production systems. Leveraging expertise in system architecture, backend development, and modern web technologies, I also possess a growing specialization in AI-driven applications. I am recognized for my ability to take end-to-end ownership of complex challenges, consistently delivering real-world impact through technical excellence and innovative problem-solving. I am a passionate and curious learner, driven to build meaningful, intelligent software and am always seeking opportunities to contribute to cutting-edge technology.",
   email: 'sparshlodha04@gmail.com',
   phone: '+917340544480',
   address: 'Bengaluru',
@@ -11,5 +11,5 @@ export const personalData = {
   linkedIn: 'https://www.linkedin.com/in/sparsh-lodha/',
   leetcode: "https://leetcode.com/sparshlodha04/",
   devUsername: "sparsh",
-  resume: "https://drive.google.com/file/d/190HDdgUxU0zkGZ-wgOaANF6fb24uqy7j/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1Rk7sgcJRIQM_ERU8AlA-LIk-3IltvvTF/view?usp=sharing"
 }
