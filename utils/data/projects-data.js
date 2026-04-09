@@ -34,5 +34,14 @@ export const projectsData = [
         role: 'Software Developer - 1',
         code: '',
         demo: '',
+    },
+    {
+        id: 5,
+        name: 'AI Assurance',
+        description: "An AI Assurance platform focusing on validating AI systems through automated evaluation and red teaming, allowing simulation of adversarial scenarios, robustness testing, and performance measurement across diverse metrics, while providing analytics to identify risks, improve reliability, and ensure safe, trustworthy deployment.",
+        tools: ['React', 'Python', 'PostgreSQL', 'LLM Red Teaming', 'Chatbot Evaluation', 'Security'],
+        role: 'Software Developer - 1',
+        code: '',
+        demo: '',
     }
 ]
