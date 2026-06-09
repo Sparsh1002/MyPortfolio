@@ -1,5 +1,5 @@
 export const contactsData = {
-    email: 'hello@sparshlodha.me',
+    email: 'hello@sparshlodha.com',
     phone: '+917340544480',
     address: 'Bengaluru',
     github: 'https://github.com/sparsh1002',
